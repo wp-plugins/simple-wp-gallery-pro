@@ -1,0 +1,123 @@
+/* Gallery */
+.sp-gallery {
+	margin-left: 0;
+	padding-left: 0;
+	overflow: hidden;
+	background: #000;
+	position: relative;
+}
+.sp-gallery ol {
+	margin: 0;
+	padding: 0;
+}
+.sp-gallery li {
+	overflow: hidden;
+	margin:0 !important;
+	padding:0 !important;
+}
+.sp-gallery img {
+	border: 0 none;
+	padding: 0;
+	margin: 0 auto !important;
+	float: none;
+/* 	display: block; */
+	vertical-align:middle;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+}
+.sp-gallery-nav-inner img {
+	float: left;
+}
+.sp-gallery-nav-outer {
+	position: absolute;
+	z-index: 111;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	padding: 5px 0;
+}
+.sp-gallery-nav-inner {
+	margin: 0 30px;
+	overflow: hidden;
+	height: 50px;
+}
+.sp-gallery-nav {
+	width: 6000px;
+	position: relative;
+	left: 0;
+	z-index: 112;
+}
+.sp-gallery-loading {
+	position: absolute;
+	left: 30px;
+	top: 5px;
+	height: 50px;
+	width: 50px;
+	margin: 0;
+	background: url(img/gallery-loader.gif) no-repeat center center;
+}
+.sp-gallery .loader span {
+	display: none;
+}
+.sp-gallery-nav-outer span.nav {
+	background: url(img/gallery-nav-arrows.png) no-repeat left top;
+	cursor: pointer;
+	position: absolute;
+	top: 18px;
+	left: 5px;
+	display: block;
+	text-indent: -9999px;
+	width: 18px;
+	height: 21px;
+	z-index: 115;
+}
+.sp-gallery-nav-outer span.sp-gallery-next {
+	background-position: right 0;
+	left: auto;
+	right: 5px;
+}
+.sp-gallery-nav a {
+	float: left;
+	margin-right: 15px;
+	opacity: .3;
+}
+.sp-gallery-nav img {
+	border: 1px solid #ddd;
+	width: 48px;
+	height: 48px;
+}
+.sp-gallery-nav a.activeSlide {
+	opacity: 1;
+}
+.sp-gallery-nav a:hover {
+	opacity: .75;
+}
+.sp-gallery-meta {
+	background: #f0f0f0;
+	padding: 15px;
+	margin: 0 0 25px;
+	border: 1px dotted #bababa;
+	border-width: 0 1px 1px;
+}
+.sp-gallery-meta .count {
+	float: right;
+}
+.sp-gallery-caption {
+	font-size: 13px;
+	line-height: 18px;
+	margin: 6px 0 12px;
+}
+.sp-gallery .caption {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #000;
+	background: rgba(17,17,17,.7);
+	font: 10px/1 'Helvetica Neue',Arial,Helvetica,FreeSans,sans-serif;
+	color: #fff;
+	padding: 3px 5px;
+	display: inline;
+}
